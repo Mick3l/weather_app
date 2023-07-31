@@ -343,7 +343,7 @@ mtl::WeatherGetter::WeatherGetter(
 
 mtl::Coordinates mtl::WeatherGetter::GetCoordinatesByName(const std::string& name) {
     cpr::Response response = cpr::Get(cpr::Url{"https://api.api-ninjas.com/v1/city"},
-                                      cpr::Header{{"X-Api-Key", "e8hvtk+YOTUg/8cHm469XA==M5oSRuLnfmr1eBwd"}},
+                                      cpr::Header{{"X-Api-Key", "INSERT YOUR API-NINJAS KEY HERE"}},
                                       cpr::Parameters{{"name", name}});
     if (response.status_code != 200) {
         return {-91.f, -91.f};
